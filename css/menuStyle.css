@@ -111,6 +111,9 @@ td {
 
 
 @media screen and (min-width: 1281px) {
+  *{
+    box-sizing: none;
+  }
   .singluten {
     padding-top: 0%;
   }
