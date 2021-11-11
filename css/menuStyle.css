@@ -1,0 +1,288 @@
+@import url("hojaDeEstilos.css");
+.contenido {
+  width: 100%;
+  margin: auto;
+  padding: auto;
+}
+.enlaces {
+  font-weight: bold;
+  color: #f3797a;
+  font-size: 25px;
+}
+a {
+  text-decoration: none;
+}
+#desayunos {
+  overflow-x: auto;
+  margin-top: 2%;
+  background-color: #f3797a;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+#sandwiches {
+  overflow-x: auto;
+  background-color: #aed68f;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+.singluten {
+  padding-top: 9%;
+  color: white;
+  font-weight: bold;
+  font-size: 120%;
+}
+#ensaladas {
+  overflow-x: auto;
+  background-color: #8fcdcf;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+#zumos {
+  background-color: #f8c24b;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+#dulces {
+  background-color: #72b7a1;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+#volver {
+  color: white;
+  background-color: #f3797a;
+  border-color: #f3797a;
+  border: 4px solid #f3797a;
+  border-radius: 20px;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+#divVolver {
+  width: 100%;
+  height: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.textoPro {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-left: 25%;
+  position: static;
+  height: auto;
+  font-size: 200%;
+  letter-spacing: 15px;
+}
+th {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+td {
+  font-weight: bold;
+}
+
+#tableSandwich, #imgDesayuno, #imgEnsalada, #tableZumos, #imgDulces {
+  float: left;
+  text-align: left;
+  margin-left: 0%;
+  width: 50%;
+  height: auto;
+  padding-left: 0.5%;
+}
+
+#imgSandwich, #tableDesayuno, #tableEnsalada, #imgZumos, #tableDulces {
+  float: right;
+  text-align: left;
+  margin-right: 0%;
+  width: 50%;
+  height: auto;
+  padding-left: 0.5%;
+}
+
+
+
+
+@media screen and (min-width: 1281px) {
+  .singluten {
+    padding-top: 0%;
+  }
+
+  .enlaces p {
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 1%;
+    text-align: center;
+  }
+  
+  .imagenesPro {
+    height: auto;
+    max-width: 50%;
+  }
+  
+  #textoSand {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: 25%;
+    position: static;
+    height: auto;
+    font-size: 200%;
+    letter-spacing: 5px;
+  }
+
+}
+
+
+
+@media screen and (min-width:1181px) and (max-width:1280px){
+  .singluten {
+    padding-top: 0%;
+  }
+  .enlaces p {
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 1%;
+    text-align: center;
+  }
+  .imagenesPro{
+    width:590px;
+    height: 530px;
+  }
+}
+
+
+
+
+@media screen and (min-width:1025px) and (max-width:1180px){
+  .singluten {
+    padding-top: 0%;
+  }
+  .enlaces p {
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 1%;
+    text-align: center;
+  }
+  .imagenesPro{
+      width:500px;
+      height: 530px;
+    }
+    
+  }
+
+
+@media screen and (min-width:901px) and (max-width:1024px){
+  .singluten {
+    padding-top: 0%;
+  }
+  .enlaces p {
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 1%;
+    text-align: center;
+  }
+  .imagenesPro{
+    width:450px;
+    height: 530px;
+  }
+
+}
+/*Para laptop de mínimo 811 y máximo 1279px*/
+@media screen and (min-width:769px) and (max-width: 900px) {
+  .textoPro {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 200%;
+    letter-spacing: 15px;
+  }
+  .singluten {
+    padding-top: 0%;
+  }
+  .enlaces p {
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 1%;
+    text-align: center;
+  }
+  .imagenesPro{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+  #imgDesayuno, #tableSandwich, #imgEnsalada, #tableZumos, #imgDulces {
+    width: 50%;
+    height: auto;
+    float: left;
+    text-align: left;
+    margin-left: 0%;
+    padding-left: 0.5%;
+  }
+
+  #tableDesayuno, #tableEnsalada, #tableDulces, #tableSandwich, #tableZumos {
+    float: none;
+    text-align: center;
+  }
+  
+
+}
+
+/*Para tablets*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  
+  .imagenesPro {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  #tableDesayuno, #tableEnsalada, #tableDulces, #tableSandwich, #tableZumos {
+    float: none;
+    text-align: center;
+  }
+  .textoPro {
+    text-align: center;
+  }
+  #cereal {
+    margin-top: 0%;
+  }
+  #smoothies {
+    margin-top: 0%;
+  }
+  
+
+}
+
+/*Para móviles*/
+@media screen and (max-width: 480px) {
+
+  .enlaces {
+    display: block;
+  }
+  .imagenesPro {
+    display: block;
+    height: auto;
+    width: 100%;
+    padding-left: 0px;
+  }
+  .textoPro {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 150%;
+    letter-spacing: 15px;
+  }
+  #tableDesayuno, #tableSandwich, #tableEnsalada, #tableZumos, #tableDulces {
+    text-align: center;
+    width: auto;
+    height: auto;
+  }
+  
+}
