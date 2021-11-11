@@ -111,7 +111,9 @@ td {
 
 
 @media screen and (min-width: 1281px) {
-  *{
+  *,
+  *:before,
+  *:after{
   box-sizing: none;
   }
   .singluten {
