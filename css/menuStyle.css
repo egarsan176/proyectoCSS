@@ -116,6 +116,10 @@ td {
   *:after{
   box-sizing: bordex-box;
   }
+  
+  *{
+    box-sizing: bordex-box;
+  }
   .singluten {
     padding-top: 0%;
   }
