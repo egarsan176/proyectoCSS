@@ -111,15 +111,7 @@ td {
 
 
 @media screen and (min-width: 1281px) {
-  *,
-  *:before,
-  *:after{
-  box-sizing: bordex-box;
-  }
-  
-  *{
-    box-sizing: bordex-box;
-  }
+
   .singluten {
     padding-top: 0%;
   }
