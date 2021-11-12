@@ -39,10 +39,6 @@ body{
         
 
     }
-
-    footer{
-        position:absolute;
-    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px)  {
@@ -107,11 +103,6 @@ body{
         border-radius: 1em;
 
     }
-
-    footer{
-        position:absolute;
-    }
-
 }
 
 @media screen and (min-width: 1281px) {
@@ -141,9 +132,7 @@ body{
         height: 100%;
         border-radius: 1em;
     }
-    footer{
-        position:absolute;
-    }
+
 }
 
 
