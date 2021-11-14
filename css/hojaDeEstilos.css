@@ -6,12 +6,6 @@
   margin: 0;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: rgba(123, 206, 209, 255);

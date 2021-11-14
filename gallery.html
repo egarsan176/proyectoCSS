@@ -1,98 +1,195 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/gallery.css">   
-        <link rel="stylesheet" href="css/hojaDeEstilos.css">
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     
 
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gallery</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/hojaDeEstilos.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <header class="header">
-            <a href="index.html" class="logo"><img src="img/MrCoffeBlanco.png" alt=""></a> 
-         
-        </header>
-     
-        <div class="topnav" id="myTopnav">
-            <a href="gallery.html" class="active">Galery</a>
-            <a href="contact.html">Contact</a>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="reservation.html">Reservation</a>
-            <a href="aboutUs.html">About Us</a>
-            <a class="icon">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo"><img src="img/MrCoffeBlanco.png" alt=""></a>
+
+    </header>
+
+    <div class="topnav" id="myTopnav">
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="aboutUs.html">About Us</a>
+        <a class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
     <div id="floatLeft">
-        <h1>Image gallery</h1>
- 
-            <div class="row">
-                <div class="column">
-                    <a href="img/pancakes.jpg" target="_blanck"><img class="imagenes" src="img/pancakes.jpg"> </a>
-                  
-                  <img class="imagenes" src="img/sandwichh.jpg">
-                  <img class="imagenes" src="img/salad.jpg">
-                  <img class="imagenes" src="img/zumo.jpg">
-                  <img class="imagenes" src="img/salad.jpg">
-                  <img class="imagenes" src="img/muesli.jpg">
-                  <img class="imagenes" src="img/im2.jpeg">
-                </div>
+        <h1>Image Gallery</h1>
 
-                <div class="column">
-                    <img class="imagenes" src="img/im3.jpeg">
-                    <img class="imagenes" src="img/im4.jpeg">
-                    <img class="imagenes" src="img/im6.jpeg">
-                    <img class="imagenes"src="img/im5.jpeg">
-                    <img class="imagenes" src="img/im7.jpeg">
-                    <img class="imagenes" src="img/im8.jpeg">
-                    <img class="imagenes" src="img/im9.jpeg">
-                </div>
+        <div class="row">
+            <div class="column">
+                <img class="imagenes hover-shadow cursor" src="img/pancakes.jpg" onclick="openModal();currentSlide(1)">
+                <img class="imagenes hover-shadow cursor" src="img/sandwichh.jpg" style="width:100%" onclick="openModal();currentSlide(2)">
+                <img class="imagenes hover-shadow cursor" src="img/salad.jpg" style="width:100%" onclick="openModal();currentSlide(3)">
+                <img class="imagenes hover-shadow cursor" src="img/zumo.jpg" style="width:100%" onclick="openModal();currentSlide(4)">
+                <img class="imagenes hover-shadow cursor" src="img/salad.jpg" style="width:100%" onclick="openModal();currentSlide(5)">
+                <img class="imagenes hover-shadow cursor" src="img/muesli.jpg" style="width:100%" onclick="openModal();currentSlide(6)">
+                <img class="imagenes hover-shadow cursor" src="img/im2.jpeg" style="width:100%" onclick="openModal();currentSlide(7)">
+            </div>
 
-                <div class="column">
-                    <img class="imagenes" src="img/im10.jpeg">
-                    <img class="imagenes" src="img/im11.jpeg">
-                    <img class="imagenes" src="img/im12.jpeg">
-                    <img class="imagenes" src="img/im13.jpeg">
-                    <img class="imagenes" src="img/im14.jpeg">
-                    <img class="imagenes" src="img/im15.jpeg">
-                    <img class="imagenes" src="img/im16.jpeg">
-                </div>
+            <div class="column">
+                <img class="imagenes hover-shadow cursor" src="img/im3.jpeg" style="width:100%" onclick="openModal();currentSlide(8)">
+                <img class="imagenes hover-shadow cursor" src="img/im4.jpeg" style="width:100%" onclick="openModal();currentSlide(9)">
+                <img class="imagenes hover-shadow cursor" src="img/im6.jpeg" style="width:100%" onclick="openModal();currentSlide(10)">
+                <img class="imagenes hover-shadow cursor" src="img/im5.jpeg" style="width:100%" onclick="openModal();currentSlide(11)">
+                <img class="imagenes hover-shadow cursor" src="img/im7.jpeg" style="width:100%" onclick="openModal();currentSlide(12)">
+                <img class="imagenes hover-shadow cursor" src="img/im8.jpeg" style="width:100%" onclick="openModal();currentSlide(13)">
+                <img class="imagenes hover-shadow cursor" src="img/im9.jpeg" style="width:100%" onclick="openModal();currentSlide(14)">
+            </div>
 
-                <div class="column">
-                    <img class="imagenes" src="img/im17.jpeg">
-                    <img class="imagenes" src="img/im18.jpeg">
-                    <img class="imagenes" src="img/im19.jpeg">
-                    <img class="imagenes" src="img/im20.jpeg">
-                    <img class="imagenes" src="img/gal1.png">
-                    <img class="imagenes" src="img/gal2.jpg">
-                    <img class="imagenes" src="img/gal3.jpg">
-                </div>
-               
-              </div>
-       
+            <div class="column">
+                <img class="imagenes hover-shadow cursor" src="img/gal5.jpg" style="width:100%" onclick="openModal();currentSlide(15)">
+                <img class="imagenes hover-shadow cursor" src="img/im11.jpeg" style="width:100%" onclick="openModal();currentSlide(16)">
+                <img class="imagenes hover-shadow cursor" src="img/im12.jpeg" style="width:100%" onclick="openModal();currentSlide(17)">
+                <img class="imagenes hover-shadow cursor" src="img/im13.jpeg" style="width:100%" onclick="openModal();currentSlide(18)">
+                <img class="imagenes hover-shadow cursor" src="img/im14.jpeg" style="width:100%" onclick="openModal();currentSlide(19)">
+                <img class="imagenes hover-shadow cursor" src="img/im15.jpeg" style="width:100%" onclick="openModal();currentSlide(20)">
+                <img class="imagenes hover-shadow cursor" src="img/im16.jpeg" style="width:100%" onclick="openModal();currentSlide(21)">
+            </div>
 
-    </div>      
-     
+            <div class="column">
+                <img class="imagenes hover-shadow cursor" src="img/im17.jpeg" style="width:100%" onclick="openModal();currentSlide(22)">
+                <img class="imagenes hover-shadow cursor" src="img/im18.jpeg" style="width:100%" onclick="openModal();currentSlide(23)">
+                <img class="imagenes hover-shadow cursor" src="img/im19.jpeg" style="width:100%" onclick="openModal();currentSlide(24)">
+                <img class="imagenes hover-shadow cursor" src="img/im20.jpeg" style="width:100%" onclick="openModal();currentSlide(25)">
+                <img class="imagenes hover-shadow cursor" src="img/gal1.png" style="width:100%" onclick="openModal();currentSlide(26)">
+                <img class="imagenes hover-shadow cursor" src="img/gal2.jpg" style="width:100%" onclick="openModal();currentSlide(27)">
+                <img class="imagenes hover-shadow cursor" src="img/gal3.jpg" style="width:100%" onclick="openModal();currentSlide(28)">
+            </div>
+
+        </div>
 
 
-    <footer class="footer">
-        <img src="img/MrCoffeeNegro.png">
-        <br>
-        <a href="">Privacy Policy</a>
-        <br>
-        <a href="">Legal warning</a>
-    </footer>
-        
-        
+        <footer class="footer">
+            <img src="img/MrCoffeeNegro.png">
+            <br>
+            <a href="">Privacy Policy</a>
+            <br>
+            <a href="">Legal warning</a>
+        </footer>
+    </div>
+    <!--Aquí están las imágenes en grande-->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+
+        <div class="modal-content">
+            <div class="mySlides">
+                <img src="img/pancakes.jpg">
+                <!--Esta imagen debería ser en tamaño completo-->
+            </div>
+            <div class="mySlides">
+                <img src="img/sandwichh.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/salad.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/zumo.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/salad.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/muesli.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im2.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/im3.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im4.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im6.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im5.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im7.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im8.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im9.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/gal5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im11.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im12.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im13.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im14.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im15.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im16.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/im17.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im18.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im19.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/im20.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/gal1.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/gal2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="img/gal3.jpg" style="width:100%">
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
         <script src="js/script.js" async defer></script>
-    </body>
+</body>
+
 </html>

@@ -111,9 +111,13 @@ td {
 
 
 @media screen and (min-width: 1281px) {
+<<<<<<< HEAD
   *{
     box-sizing: none;
   }
+=======
+
+>>>>>>> 8a5559723096e616f2c89d723257e38a07b44918
   .singluten {
     padding-top: 0%;
   }
