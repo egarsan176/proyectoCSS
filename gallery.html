@@ -17,7 +17,7 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <a href="index.html" class="logo"><img src="img/MrCoffeBlanco.png" alt=""></a>
 
     </header>
@@ -79,6 +79,9 @@
             </div>
 
         </div>
+        <div id="divboton" class="visible">
+            <button><a href="#header" class="flotante"><img id="botonflo" src="img/galeriaboton.png"></a></button>
+        </div>
 
 
         <footer class="footer">
@@ -86,7 +89,7 @@
             <br>
             <a href="">Privacy Policy</a>
             <br>
-            <a href="">Legal warning</a>
+            <a href="">Legal Notice</a>
         </footer>
     </div>
     <!--Aquí están las imágenes en grande-->
@@ -182,11 +185,15 @@
             <div class="mySlides">
                 <img src="img/gal3.jpg" style="width:100%">
             </div>
+            
         </div>
+
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+        
+        
 
 
         <script src="js/script.js" async defer></script>
