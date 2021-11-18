@@ -1,6 +1,31 @@
 html {
   box-sizing: border-box;
 }
+.flotante {
+	font-size: 16px; /* Cambiar el tamaño de la tipografia */
+	text-transform: uppercase; /* Texto en mayusculas */
+	font-weight: bold; /* Fuente en negrita o bold */
+	color: #ffffff; /* Color del texto */
+	border-radius: 5px; /* Borde del boton */
+	letter-spacing: 2px; /* Espacio entre letras */
+	background-color: #F8C24B; /* Color de fondo */
+	padding: 5px 10px; /* Relleno del boton */
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+    width: 8%;
+}
+.flotante:hover {
+	background-color: #8FCDCF; /* Color de fondo al pasar el cursor */
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
+}
+#botonflo{
+  width: 100%;
+}
 
 /* defino el ancho de la columna a un 25% y con el float left las pone una al lado de otra */
 .column {
@@ -63,6 +88,9 @@ a {
     margin-left: 10%;
     margin-right: 10%;
   }
+  .flotante {
+    width: 18%;
+  }
 }
 
 /* tablet --> dispositivos con anchura mínima de 481 y máxima de 810*/
@@ -70,6 +98,9 @@ a {
   .column {
     width: 50%; /*reajusto el ancho de columna a un 50% para que se pongan dos arriba y dos abajo */
     display: block;
+  }
+  .flotante {
+    width: 13%;
   }
 }
 
@@ -85,6 +116,10 @@ a {
   #name {
     font-size: 140%;
   }
+  .flotante {
+    width: 12%;
+  }
+
 }
 /* ordenador hd dispositivos con anchura mínima de 1280*/
 @media screen and (min-width: 1280px) {
